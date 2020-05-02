@@ -1,1 +1,3 @@
 
+# What next
+* Rename project
