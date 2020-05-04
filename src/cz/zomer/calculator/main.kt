@@ -5,8 +5,13 @@ fun main(args: Array<String>) {
     println("set value y")
     val y = readLine()!!.toDouble()
 
-    sum(x, y)
-    subs(x, y)
-    multip(x, y)
-    division(x, y)
+    val su = addition(x, y)
+    println("Addition = $su")
+    val sub = substraction(x, y)
+    println("Substraction = $sub")
+    val multi = multipliction(x, y)
+    println("Mulitplication = $multi")
+    val div = division(x, y)
+    println("Division = $div")
+
 }
