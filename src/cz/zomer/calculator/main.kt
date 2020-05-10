@@ -1,17 +1,18 @@
 package cz.zomer.calculator
 fun main(args: Array<String>) {
-    println("set value x")
-    val x = readLine()!!.toDouble()
-    println("set value y")
-    val y = readLine()!!.toDouble()
+    println("set value a")
+    val a = readLine()!!.toDouble()
+    println("set value b")
+    val b = readLine()!!.toDouble()
 
-    val su = addition(x, y)
+    val service = CalculationService(a, b)
+    val su = service.addition()
     println("Addition = $su")
-    val sub = substraction(x, y)
+    val sub = service.substraction()
     println("Substraction = $sub")
-    val multi = multipliction(x, y)
+    val multi = service.multipliction()
     println("Mulitplication = $multi")
-    val div = division(x, y)
+    val div = service.division()
     println("Division = $div")
 
 }
